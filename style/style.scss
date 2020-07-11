@@ -16,7 +16,7 @@ $opacity-pink: #f9bdbd,
 
 body {
     // font-family: "Nunito Sans", sans-serif;
-    font-family: 'Fira Mono', monospace;
+    font-family: "Fira Mono", monospace;
     color: $grey;
     width: auto;
     max-width: 100%;
@@ -34,13 +34,12 @@ body {
     padding-left: 0;
     margin: 0 auto;
     display: flex;
-    justify-content: flex-end ;
+    justify-content: flex-end;
     align-items: center;
 }
 
 .wrapper {
     // max-height: 15rem;
-    padding-left: 0;
     margin: 0;
     padding-top: 50px;
     // width: 100%;
@@ -59,7 +58,7 @@ body {
     flex-wrap: nowrap;
 
     &-item {
-        font-family: 'Raleway', sans-serif;
+        font-family: "Raleway", sans-serif;
         margin-right: 2rem;
         padding-top: 2rem;
         padding-bottom: 2rem;
@@ -82,6 +81,7 @@ body {
         text-decoration: none;
         color: $light-yellow;
         -webkit-text-stroke: 1px $grey;
+
         &:hover {
             color: $dark-grey;
             -webkit-text-stroke: 0;
@@ -125,7 +125,7 @@ body {
 //             position: absolute;
 //             top: 8vh;
 //         }
-    
+
 //     }
 // }
 
@@ -144,6 +144,7 @@ body {
         flex: 0 0 40%;
         max-width: 40%;
         position: relative;
+
         &:first-child {
             display: flex;
             justify-content: flex-end;
@@ -157,11 +158,12 @@ body {
         line-height: 1rem;
         color: $light-grey;
     }
-    
+
     &-link {
         color: $grey;
         font-weight: 500;
         text-decoration: none;
+
         &:hover {
             color: $dark-yellow;
         }
@@ -175,7 +177,7 @@ body {
         top: -10vh;
     }
 
-    &__front{
+    &__front {
         width: 50%;
         position: relative;
         z-index: 0;
@@ -191,6 +193,7 @@ body {
         bottom: 10vh;
         font-size: 3vh;
         color: $light-grey;
+
         &::after {
             display: block;
             content: "";
@@ -212,12 +215,14 @@ body {
         justify-content: space-between;
         align-items: center;
     }
+
     &-line {
         margin-top: 2rem;
         width: 100%;
         height: 4px;
         background-color: $light-yellow;
         position: relative;
+
         &::before {
             content: "";
             border-radius: 50%;
@@ -229,6 +234,7 @@ body {
             left: 0;
             top: calc(50% - 2vh);
         }
+
         &:after {
             content: "";
             position: absolute;
@@ -244,11 +250,13 @@ body {
             width: 15%;
         }
     }
+
     &-css {
         &:after {
             width: 20%;
         }
     }
+
     &-javascript {
         &:after {
             width: 25%;
@@ -260,26 +268,32 @@ body {
     display: grid;
     grid-template: repeat(7, 2rem) / 1fr 1fr 1fr;
     grid-gap: 40px;
+
     &-01 {
         grid-column: 1/2;
         grid-row: 1/4;
     }
+
     &-02 {
         grid-column: 2/3;
         grid-row: 1/4;
     }
+
     &-03 {
         grid-column: 3/4;
         grid-row: 1/4;
     }
+
     &-04 {
         grid-column: 1/2;
         grid-row: 4/8;
     }
+
     &-05 {
         grid-column: 2/3;
         grid-row: 4/8;
     }
+
     &-06 {
         grid-column: 3/4;
         grid-row: 4/8;
@@ -290,7 +304,6 @@ body {
         overflow: hidden;
     }
 }
-
 
 .text-center {
     text-align: center;
@@ -316,7 +329,7 @@ img {
 .section-portfolio {
     padding-left: 20px;
     padding-right: 20px;
-    padding-top: 40px;
+
 }
 
 .section-banner {
@@ -336,12 +349,135 @@ img {
         margin-top: 15px;
         margin-bottom: 40px;
     }
+}
 
-    .btn {
-        color: $dark-grey;
-        background-color: $dark-yellow;
+.btn {
+    color: $dark-grey;
+    background-color: $dark-yellow;
+    font-size: 16px;
+    text-decoration: none;
+    padding: 10px 50px;
+}
+
+.section-advanteges {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: $light-grey;
+}
+
+.advanteges {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    padding-left: 30px;
+    padding-right: 30px;
+
+    &__title {
+        text-transform: uppercase;
         font-size: 16px;
-        text-decoration: none;
-        padding: 10px 50px;
+        color: $dark-grey;
+
+        span {
+            font-size: 16px;
+            display: block;
+            font-weight: 500;
+            padding-bottom: 5px;
+        }
+    }
+
+    &__icon {
+        background-color: $dark-grey;
+        width: 70px;
+        height: 70px;
+        border-radius: 100%;
+        margin: 0 auto;
+        background-position: center center;
+        background-repeat: no-repeat;
+        margin-bottom: 20px;
+
+        &-01 {
+            background-image: url(/img/heart-icon.svg);
+            background-size: 26px 23px;
+        }
+
+        &-02 {
+            background-image: url(/img/work_icon.svg);
+            background-size: 26px 23px;
+        }
+
+        &-03 {
+            background-image: url(/img/exp_icon.svg);
+            background-size: 26px 23px;
+        }
+    }
+}
+
+.section-form {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: 45px auto 0;
+    text-align: center;
+
+    &__input,
+    &__textarea {
+        border: none;
+        border-bottom: 1px solid #e1e1e1;
+        font-size: 14px;
+        padding: 15px 25px;
+        text-align: center;
+        margin-bottom: 15px;
+        transition: 0.3s;
+        box-sizing: border-box;
+        &:focus {
+            outline: none;
+            border-bottom: 1px solid $dark-grey;
+        }
+        &__textarea {
+            padding: 15px 25px;
+            min-height: 100px;
+            margin-bottom: 60px;
+        }
+    }
+    .btn {
+        border: none;
+    }
+}
+
+.footer {
+    background-color: $dark-grey;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+    font-size: 16px;
+    padding-left: 60px;
+    padding-right: 60px;
+}
+
+.social-network {
+    display: flex;
+    list-style-type: none;
+    padding-left: 0;
+    margin: 0;
+
+    &__item {
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+
+    &__link {
+        color: #fff;
     }
 }
